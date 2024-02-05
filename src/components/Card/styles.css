@@ -1,10 +1,14 @@
+body {
+  background-color: rgb(32, 32, 32);
+}
+
 .card {
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
   border-radius: 8px;
-  background-color: #414141;
+  background-color: rgb(62, 62, 62);
   padding: 1rem 2rem;
   margin-bottom: 1rem;
 }
@@ -14,6 +18,14 @@
   align-items: center;
   justify-content: center;
   gap: 0.5rem;
+}
+
+button {
+  text-decoration: none !important;
+  color: azure;
+  background-color: rgb(26, 26, 26);
+  padding: 15px;
+  border-radius: 15px;
 }
 
 .done {
