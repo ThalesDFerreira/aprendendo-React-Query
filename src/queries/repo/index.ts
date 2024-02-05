@@ -7,7 +7,10 @@ const getRepos = async () => {
 };
 
 const useFetchRepos = () => {
-  return useQuery(['repos'], getRepos);
+  return useQuery({
+    queryKey: ['repos'],
+    queryFn: () => getRepos(),
+  });
 };
 
 export default useFetchRepos;
